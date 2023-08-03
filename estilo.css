@@ -1,0 +1,114 @@
+body {
+    background-image: url(imagens/disposicao-da-mesa-com-vista-superior.jpg);
+
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+.main-title {
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, .1);
+    color: #3b6565;
+    border-radius: 12px;
+    padding: 5px;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+    box-shadow: 1px 1.6px 5px green;
+}
+
+.list-wrapper {
+    width: 90%;
+    max-width: 500px;
+    max-height: 400px;
+    background-color:  rgba(0, 0, 0, .1);
+    overflow-y: auto;
+    border-radius: 12px;
+    box-shadow:  0px 1.6px 5px rgb(6, 175, 6);
+}
+
+.list {
+    list-style-type: none; /* retira o bullet da lista*/
+    padding: 20px;
+}
+
+.list-item {
+    display: flex; /*por padrão o flex direction é ROW, então automaticamente coloca essas div uma do lado da outra*/ 
+    /* border: 1px solid rgba(255, 255, 255, 0.4); */
+    border-radius: 12px;
+    margin-bottom: 8px;
+    box-shadow: 1px 3px 5px rgb(63, 62, 62)
+}
+
+.list-item__content {
+    width: 250px;
+    margin-top:  10px;
+    margin-left: 0;  
+}
+
+.list-item__action {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    opacity: 0.4;
+}
+
+.list-item:hover .list-item__action {
+    /*display: flex; com display flex se aumentar onome pode quebrar a linha , assim ficadno horrorosoo efeito. */
+    opacity: 1;
+}
+
+.edit:hover {
+    opacity: .4;
+}
+.del:hover {
+    opacity: .4;
+}
+
+.list-item__img {
+    display: flex;
+    margin: 5px;
+    width: 100px;
+    justify-content: center;
+}
+
+.list-item__img img {
+    width: 80px;
+    border-radius: 50%;
+
+}
+
+.list-item__name {
+    font-size: 20px;
+    margin: 0 ;
+    color: #3b6565;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+
+    
+}
+
+.list-item__email {
+    margin:  0 0;
+    color: #4f4a4a;
+}
+
+.list-item:hover {
+    background-color: rgba(226, 237, 237, 0.5);
+}
+
